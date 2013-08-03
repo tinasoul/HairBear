@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
   # belongs_to :stylist
 
   has_and_belongs_to_many :stylists
+  has_many :photos
 end
