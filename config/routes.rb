@@ -9,6 +9,10 @@ HairBear::Application.routes.draw do
 
   resources :photos
 
+  resources :users do
+    resources :photos
+  end
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

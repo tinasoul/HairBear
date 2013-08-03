@@ -15,7 +15,7 @@
 <hr>
 
 <p>Add a new photo</p>
-<%= form_for(@photo) do |f| %>
+<%= form_for [@user, @photo] do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
