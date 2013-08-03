@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Salon name:</b>
+  <%= @salon.salon_name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @salon.email %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @salon.address %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%= @salon.phone_number %>
+</p>
+
+
+<%= link_to 'Edit', edit_salon_path(@salon) %> |
+<%= link_to 'Back', salons_path %>
